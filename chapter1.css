@@ -1,0 +1,53 @@
+h1{
+    color: orange;
+    /*text-align: center;*/
+}
+button{
+    color: yellow;
+    background-color: chocolate;
+}
+p{
+    color: blue;
+}
+#textalign{
+    text-align: left;
+}
+#fontweight{
+    font-weight: bolder;
+    font-weight: 9000;
+    font-weight: lighter;
+    font-weight: bolder;
+}
+#first{
+    text-decoration: wavy underline ;
+    text-decoration-color: rgb(201, 251, 51);
+    
+}
+
+#second{
+    text-decoration: overline;
+    text-decoration-color: rgb(95, 21, 21);
+}
+
+#third{
+    text-decoration: line-through;
+    text-decoration-color: rgb(251, 68, 51);
+}
+#fourth{
+    font-weight: bolder;
+}
+#google{
+    text-decoration: none;
+}
+#lineheight{
+    line-height: normal;
+}
+#lineheight2{
+    line-height: 2.5;
+}
+#letter{
+    letter-spacing: 5px;
+}
+table{
+    border: 2px solid black;
+}
