@@ -1,0 +1,27 @@
+p{
+    color: brown;
+    line-height: 30px;
+
+}
+h1,h3{
+    text-align: center;
+}
+#poet{
+    color: rgb(229, 91, 91);
+    text-decoration: underline;
+}
+body{
+    font-family: Georgia;
+}
+a{
+    color: rgb(0, 299, 0);
+    text-decoration: none;
+}
+button{
+    color: white;
+    background-color: teal;
+}
+textarea{
+    color: black;
+    background-color: lightgray;
+}
