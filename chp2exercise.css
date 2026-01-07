@@ -1,0 +1,27 @@
+#maintopic{
+    color: blue;
+}
+*{
+    text-align: center;
+}
+h1,h2,h3,h4,h5{
+    font-family: "Georgia";
+}
+h3+p{
+    color: rgb(222, 222, 227);
+    background-color: cornflowerblue;
+}
+div>button{
+    background-color: purple;
+    color: azure;
+}
+button:hover{
+    background-color: yellow;
+    color: blue;
+}
+h1::first-letter{
+    color: red;
+}
+input[type=radio]:checked+label{
+    color: darkgreen;
+}
