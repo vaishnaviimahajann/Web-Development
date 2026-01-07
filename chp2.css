@@ -1,0 +1,53 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#quara{
+    color: rgb(154, 249, 154);
+}
+a.link{
+    color: rgb(255, 105, 180);
+    text-decoration: none;
+}
+p a{
+    color: purple;
+    background-color: burlywood;
+}
+p+h3{
+    text-decoration: underline;
+}
+div > input{
+  background-color: rgb(238, 159, 159);
+}
+h2{
+    font-weight: bolder;
+}
+input[type="text"]{
+color:red;
+}
+input[type="password"]{
+    color: green;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+button:active{
+    background-color: pink;
+}
+p:active{
+    font-weight: bold;
+    color: green;
+}
+input[type=radio]:checked+label{
+    color: red;
+    font-weight: bold;
+}
+.post:nth-of-type(2n){
+    background-color: chocolate;
+}
+h1::first-letter{
+   color: chartreuse;
+}
+p ::first-line{
+    color: rgb(132, 132, 243);
+}

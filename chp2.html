@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="chp2.css" />
+    <title>CSS Chapter2</title>
+  </head>
+  <body>
+    <header>
+        <h3>we are using selctors here...</h3><br>
+        There are various types of selectors in CSS:-<br>
+
+         <h3> 1element selector(selects all the elemnt of same type) </h3>ex <br>
+        h1{                                                         <br>
+            color: blue;                                           <br>
+        }                                                          <br><br>
+
+        <h3>2 universal selctor(to use everthing from file)  </h3>           <br>
+        *{                                                          <br>
+            font-family: Arial, sans-serif;                          <br>
+        }                                                           <br><br>
+
+         <h3>3id selctor(to select a particular element with id) </h3>ex       <br>
+        #quora{                                                      <br>
+            color: green;                                              <br>
+        }                                                               <br><br>
+
+        <h3>4class selctor(to select a particular element with class)</h3> ex   <br>
+        .follow{                                                       <br>
+            color: orange;                                             <br>
+        }                                                            <br><br>
+        if we have to select multiple elements with same class name we use class selector.<br>
+        ex h1 class="hie" p class="hie" etc<br><br>
+        we have apply class selector to  above links in the page.<br><br> 
+
+        <h3>5decendant selector(to select a particular element inside another element)</h3> ex<br>
+        nav ul li a{                                                  <br>
+            color: purple;                                            <br>
+        }                                                           <br><br>
+        here we have to select a tag 'a' inside 'li' inside 'ul' inside 'nav'<br>
+        we have apply decendant selector to anchor tag which are in paragraph tag<br><br>
+         
+         <h3>6Adjacent sibling combinator ex (Heading3 that comes immidiatly after anybb paragrapgh)</h3><br>
+        p +h3{                                                                                  <br>
+            property:value;                                                                     <br>
+        }                                                                                       <br>
+        it follows sibling relation which is on the same level                                   <br>
+        to use this we have apply this elector on  heading which comes exactly after paragrapgh tag <br><br>
+      
+        <h3>7 child combinator ex(selects all buttons which are direct children of spans)</h3>   <br>
+        span>button{                                                                     <br>
+            property:value;                                                              <br>
+        }                                                                                 <br>
+        <h4>we can't go deep in child slector so this is a disadvantage of it</h4>    <br><br>
+        
+
+        <h3>8 attribute slector ex (selects elemnts based on the presencse or value  of given attribute)</h3><br>
+        input[att="value"]{                                                                          <br>
+            property=value                                                                            <br>
+        }                                                                                              <br>
+        to see this attribute fill username and password you will se the chnages <br><br>
+
+        <h1>pseudo class:</h1>
+        <h3>4 major classes</h3><ul>
+            <li>hover</li> you can see the diffence on upvote and login signup
+            <li>active</li>   you can see the chnages in bob adan
+            <li>checked</li>    //used for radio button
+            <li>nth of type</li>  // nth type of button if i want to change color of all odd number
+        </ul>
+        <h1>pseudo elemts</h1>
+        <h4>a keyword added to a selector that lets you a style a specific part of the selected elemts</h4>
+        <ul>
+            <li>::first letter</li>
+            <li>::first-line</li>
+            <li>::selection</li>
+        </ul>
+
+        <h1 id="quara">Quora 
+            <button id="login">Log in</button>
+            <button id="signup">Sign up</button>
+        </h1>
+        <div>
+            <input type="text" placeholder="username">
+            <input type="password" placeholder="password">
+        </div>
+        <nav>
+            <ul>
+                <li><a class="link" href="/home">Home</a></li>
+                <li><a class="link" href="/following">Following</a></li>
+                <li><a class="link" href="/answer">Answer</a></li>
+                <li><a class="link" href="/spaces">Spaces</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <p>
+            <div>
+        Adam &nbsp;&nbsp;
+        <a class="follow" href="/adam">Follow /abc</a></span>
+        </p>
+        <h3>What is the highest salary for a spacex engineer?</h3>
+        <span>
+            <button>+upvote</button>
+            <button>answer</button>
+        </span>
+        <hr />
+    </div>
+        <p>
+            <div>
+        Bob &nbsp;&nbsp;
+        <a class="follow" href="/bob">Follow xyz</a>
+        </p>
+        <h3>What is the syllabus for JEE 2024?</h3>
+        <span>
+            <button>+upvote</button>
+            <button>answer</button>
+        </span>
+        <hr />
+</div>
+<div>
+        <p>
+        Catlyn &nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="follow" href="/catlyn">Follow pqr</a>
+        </p>
+        <h3>Why is the sky blue?</h3>
+        <span>
+            <button>+upvote</button>
+            <button>answer</button>
+        </span>
+        <hr />
+</div>
+        <p>
+            Dan &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="follow" href="/dan">Follow pqr</a>
+            </p>
+            <h3>Why is the sky blue?</h3>
+            <span>
+                <button>+upvote</button>
+                <button>answer</button>
+            </span>
+            <hr />
+            <div>
+                <label for="yes">yes</label>
+            <input type="radio" id="yes">
+            <label for="no">no</label>
+            <input type="radio" id="no>" </div>
+         
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam perferendis neque totam consequatur. Distinctio placeat ad, ea mollitia quibusdam ex, quod voluptas numquam vel, voluptatem ipsam? Delectus non architecto quae.</p>
+    </main>
+  </body>
+</html>
+</body>
+</html>
