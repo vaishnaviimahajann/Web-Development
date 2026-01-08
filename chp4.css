@@ -1,0 +1,40 @@
+h1{
+   color: rgb(173, 54, 4);
+} 
+ h3{
+    color: rgb(59, 22, 1);
+ }   
+    div{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(240, 108, 108);
+    display: inline-block;
+    transition: 2s;
+    margin-top: 10px 2s ease-in-out 0.2s;
+
+
+
+}
+#opacity{
+    opacity: 0.5;
+}
+div:hover{
+background-color: rgb(63, 9, 9);
+border-radius: 50px;
+}
+#rotate{
+    transform: rotate(45deg);
+    box-shadow: 2px 2px 8px rgb(45, 19, 19);
+    background-image: url(C:\Users\Vaishnavi\Downloads\download.jpeg);
+}
+#scale{
+    transform: scale(0.5);
+    position: static;
+}
+#translate{
+    transform: scalex(0.5);
+    position: relative;
+}
+/*#skew{
+    translate: skew(-30deg);
+}*/
