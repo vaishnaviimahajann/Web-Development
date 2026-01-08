@@ -1,0 +1,41 @@
+#container{
+    height: 400px;
+    width: 400px;
+    background-color: rgb(58, 6, 15);
+    margin: auto;
+    margin-top: 10rem;
+     border: 2px solid black;
+     border-radius: 20px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     align-items: center;
+
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(216, 187, 187);
+    border: 2px solid darkred;
+    text-align: center;
+    font-size: 50px;
+   
+}
+#navbar{
+    height: 50px;
+    width: 900px;
+    background-color: pink;
+    border: 2px solid rgb(130, 16, 35);
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+.nav{
+    height: 50px;
+    width: 80px;
+    border-radius: 10px;
+    margin-left: 5px;
+    font-size: 24px;
+    line-height: 50px;
+}

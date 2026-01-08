@@ -1,0 +1,25 @@
+#container{
+    height: 300px;
+    width: 80%;
+    background-color: antiquewhite;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: row-reverse;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    /*align-items: flex-end;*/
+    align-content: space-around;
+}
+div{
+    width: 250px;
+    height: 500px;
+}
+h2{
+    text-align: center;
+}
+h1{
+    color: rgb(254, 127, 127);
+}
+
