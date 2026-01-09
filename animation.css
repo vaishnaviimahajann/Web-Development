@@ -20,7 +20,18 @@
     animation-timing-function: ease-in;
     animation-delay: 0;
     animation-iteration-count: 3;
-    animation-direction:normal;
+    animation-direction:normal; 
+}
+#media{
+    background-color: yellow;
+    border: 2px solid black;
+    height: 45px;
+    width: 1000px;
+}
+@media(width:400px){
+    #media{
+        background-color: pink;
+    }
 }
 
 @keyframes fontanimation{
@@ -30,4 +41,13 @@
 @keyframes coloranimation{
     from{background-color:pink;}
     to{background-color:red;}
+}
+*{
+    color: brown;
+}
+h1{
+    color: rgb(72, 28, 28);
+}
+h2{
+    color: rgb(69, 69, 133);
 }
