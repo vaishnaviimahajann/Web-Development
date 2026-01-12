@@ -1,0 +1,14 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: url("music.jpg");
+}
+h1{
+    color: beige;
+    
+}
+ul{
+    list-style: none;
+}
+.menu li{
+    color: white;
+}
