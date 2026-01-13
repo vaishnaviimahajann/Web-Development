@@ -1,6 +1,8 @@
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: url("music.jpg");
+    margin: 0;
+    padding: 0;
 }
 h1{
     color: beige;
