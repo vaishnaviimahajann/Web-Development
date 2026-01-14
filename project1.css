@@ -10,11 +10,14 @@
 .main{
     display: flex;
     height: 100vh;
+    padding: 0.2rem;
 }
 
 .sidebar{
     width: 350px;
     padding: 0.5rem;
+    background-color: #000;
+    margin-right: 0.5rem;
 }
 
 .maincontent{
@@ -58,9 +61,12 @@ a{
 /* LIBRARY */
 .library{
     background-color: #121212;
+    
     border-radius: 1rem;
     margin-top: 1rem;
+    padding-bottom: 1rem;
     padding: 0.75rem;
+    margin-bottom: 1rem;
 }
 
 .liboption{
@@ -73,11 +79,14 @@ a{
     display: flex;
     align-items: center;
     gap: 1rem;
+    
 }
 
 .lib-left img{
     height: 1.25rem;
     width: 1.25rem;
+        background-color: #232323;
+
 }
 
 .icons{
@@ -93,4 +102,34 @@ a{
 
 .icons i:hover{
     opacity: 1;
+}
+.box{
+    background-color:#232323;
+    height: 8rem;
+    border-radius: 0.75rem;
+    margin: 0.5rem 0 0.5rem 0 ;
+    padding: 0.75rem 1rem;
+
+}
+.boxpara1{
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #232323;
+}
+.boxpara2{
+    font-size: 0.75rem;
+    opacity: 0.9;
+    background-color: #232323;
+
+}
+.badge{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin: 0.5rem;
+    height: 2rem;
+    width: fit-content;
 }
