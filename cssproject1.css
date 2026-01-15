@@ -23,6 +23,7 @@ body{
     border-radius: 1rem;
     overflow: auto;  /* scrol bar bas kamm hoga tab dikega*/
     background-color: #121212;
+    padding: 0 1.5rem 0 1.5rem;
 }
 .musicplayer{
     background-color: black;
@@ -148,4 +149,34 @@ a{
     background-color: #000;
     color: white;
     font-weight: 700;
+}
+@media(max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    
+}
+.cardscontainer{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.cardimg{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.cardtitle{
+    font-weight: 600;
+}
+.cardinfo{
+    font-size: 0.85rem;
+    opacity: 0.5;
 }
