@@ -45,7 +45,27 @@ if(m1>=35){
 }else{
     close.log("fail");
 }
- 
-let priya=45;
-let kriya=98;
-console.log(priya&&kriya);
+ if(1){
+    console.log("is has true value");
+ }else{
+    console.log("it has false value");
+ }
+ if(1){
+    console.log("is has true value");
+ }else{
+    console.log("it has false value");
+ }
+ if(null){
+    console.log("is has true value");
+ }else{
+    console.log("it has false value");
+ }
+ if("apnacollege"){
+    console.log("is has true value");
+ }else{
+    console.log("it has false value");
+ }
+
+ alert("something is wrong");
+ let name = prompt("enter a name");
+ console.log(name);
