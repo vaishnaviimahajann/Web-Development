@@ -1,0 +1,47 @@
+*{
+    background-color: rgb(242, 170, 199);
+
+   
+}
+h1{
+    text-align: center;
+}
+.parent{
+    background-color: rgb(246, 150, 188);
+   width: 100%;
+   height: 47vh;
+   display: flex;
+   border-radius: 30PX;
+   margin: 20px 0px;
+    
+}
+.child{
+    height: 300px;
+    width: 250px;
+    background-color: rgb(246, 150, 188);
+    margin: 30px 60px;
+    justify-content: space-between;
+    
+    
+
+}
+h3{
+    text-align: center;
+}
+.image{
+    height: 100%;
+    width: 100%;
+}
+.author{
+    margin-bottom: 20px;
+    text-align: center;
+    background-color:  rgb(246, 150, 188);
+}
+.customer{
+   width: 100%;
+   height: 25vh;
+   background-color:  rgb(245, 185, 209);
+}
+h2{
+    margin: 20px 0px;
+}
