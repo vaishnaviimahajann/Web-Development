@@ -1,5 +1,6 @@
-*{
+body{
     background-color: rgb(242, 170, 199);
+    margin: 0;
 
    
 }
@@ -38,10 +39,61 @@ h3{
     background-color:  rgb(246, 150, 188);
 }
 .customer{
-   width: 100%;
-   height: 25vh;
+   width: 90%;
+   height: 20vh;
    background-color:  rgb(245, 185, 209);
+   border-radius: 25PX;
+   margin: auto;
+  
+   
 }
 h2{
     margin: 20px 0px;
+}
+.heading{
+    margin: 0;
+    padding-top: 20px;
+    color:  rgb(119, 15, 56);
+}
+.caption{
+    font-size: 20px;
+    text-align: center;
+     color:  rgb(75, 4, 33);
+}
+.authorr{
+    text-align: center;
+     color:  rgb(233, 147, 182);
+    
+}
+.form{
+    border: 2px solid rgb(91, 18, 62);
+    border-radius: 20px;
+    width: 50vh;
+    height: auto;
+   margin: 20px auto ;
+   padding: 12px;
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+}
+.radio-group {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+}
+.form input,
+.form select,
+.form textarea {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #555;
+    font-size: 14px;
+}
+.submit {
+    display: block;
+    margin: 15px auto;
+}
+.thanku{
+    text-align: center;
+    color:  rgb(61, 9, 30);
 }
