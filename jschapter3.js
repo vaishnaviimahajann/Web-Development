@@ -41,3 +41,23 @@ let nums=[56,45,76,89,43,33];
 console.log(nums[0]);
 console.log(nums[1]);
 console.log(nums[2]);
+
+
+
+let arr=[7,9,2,-2];
+let n=3;
+let ans=arr.slice(0,3);
+console.log(ans);
+
+let arrr=[7,9,0,-2];
+let num=3;
+let anss=arr.slice(arrr.length-n);
+console.log(anss);
+
+let strrr=[];
+if(strrr.lenth==0){
+   console.log("strinng is empty");
+}
+else{
+    console.log("string not empty");
+}
