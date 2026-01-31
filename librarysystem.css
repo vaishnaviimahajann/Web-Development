@@ -1,11 +1,13 @@
 body{
     background-color: rgb(242, 170, 199);
     margin: 0;
+    padding: 20px;
 
    
 }
 h1{
     text-align: center;
+    color: #7a1a5c;
 }
 .parent{
     background-color: rgb(246, 150, 188);
@@ -96,4 +98,42 @@ h2{
 .thanku{
     text-align: center;
     color:  rgb(61, 9, 30);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #a0396e;
+    border-radius: 20px;
+    
+}
+
+.logo {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #3a0329;
+}
+.social_media{
+    height: 50px;
+    width: 900px;
+    background-color: #555;
+    justify-content: center;
 }
