@@ -16,6 +16,7 @@ let newplus=plus.map(function(el){
 
 });
 
+
 let square =[9,16,23,45];
 let newsquare=square.map((square)=>square*square);
 console.log(newsquare);
