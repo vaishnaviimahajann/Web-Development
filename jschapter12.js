@@ -1,4 +1,4 @@
-async function greet(){
+/*async function greet(){
     console.log("hello");
 }
 greet();
@@ -26,4 +26,14 @@ let student={
     name:"John",
     age:20,
     city:"New York"
-};
+};*/
+
+let url="https://catfact.ninja/fact";
+fetch(url)
+.then((res)=>{
+    console.log(res);
+    console.log(res.json());
+})
+.catch((err)=>{
+    console.log("ERROR -",err);
+});
