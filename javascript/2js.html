@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+         
+          margin: 2px;
+          padding: 3px;
+        }
+        .div1{
+            height: 200px;
+            width: 200px;
+            background-color: brown;
+            border: 3px solid black;
+        }
+        .div1{
+            height: 200px;
+            width: 200px;
+            background-color: brown;
+            border: 3px solid black;
+        }
+        .div1{
+            height: 200px;
+            width: 200px;
+            background-color: brown;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body><!--
+    <div class="div1">hie</div>
+    <div class="div1">from</div>
+    <div class="div1">javascript</div>
+    <button id="btn">change color</button>
+    <script src="2js.js"></script>-->
+    <h1 id="count">0</h1>
+<button id="increase">Increase</button>
+<button id="decrease">Decrease</button>
+  <script>
+    let count=0;
+document.getElementById("increase").addEventListener("click",function(){
+    count++;
+    document.getElementById("count").innerText=count;
+})
+document.getElementById("decrease").addEventListener("click",function(){
+    count--;
+    document.getElementById("count").innerText=count;
+})
+  </script>
+</body>
+</html>
