@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+/*.box{
+    height: 500px;
+    width: 500px;
+    background-color: red;
+}*/
+.box {
+  height: 120px;
+  width: 120px;
+  background-color: pink;
+}
+
+.blue {
+  background-color: blue;
+}
+.blue{
+    background-color: red;
+}
+
+</style>
+
+<body>
+   <!-- <button id="add">ADD</button>-->
+    <button id="change">Change Color</button>
+
+      <div id="box" class="box"></div>
+
+
+
+
+<script>
+ /* document.getElementById("add").addEventListener("click",function(){
+    let newdiv=document.createElement("div");
+   newdiv.style.height = "100px";
+    newdiv.style.width = "100px";
+    newdiv.style.backgroundColor = "pink";
+      document.body.appendChild(newdiv);
+      newdiv.innerText="hie";
+    document.body.appendChild(newdiv);
+    newdiv.classList.add("box");
+    document.body.appendChild(newdiv)
+
+    document.getElementById("change").addEventListener("click", function() {
+    document.getElementById("box").classList.toggle("blue").classList.toggle("red");
+});
+    
+  */
+ let colors = ["pink", "blue", "red"];
+let index = 0;
+
+document.getElementById("change").addEventListener("click", function() {
+    
+    let box = document.getElementById("box");
+    
+    box.style.backgroundColor = colors[index];
+    
+    index++;
+    
+    if(index === colors.length){
+        index = 0;
+    }
+});
+</script>
+
+
+</body>
+</html>
