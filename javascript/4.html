@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>accepting value from user and saying hello to them</h2>
+    <input type="text" name="name" placeholder="enter your name" id="name">
+    <button id="btn">submit</button>
+    <h2 id="op"></h2>
+
+    <script>
+        document.getElementById("btn").addEventListener("click",function(){
+             let name=document.getElementById("name").value;
+             if(name===""){
+                alert("please enter a name");
+             }else{
+             document.getElementById("op").innerText="hello"+ name; }       
+        });
+    </script>
+</body>
+</html>
