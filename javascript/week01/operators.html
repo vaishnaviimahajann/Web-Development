@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            
+        }
+        #box{
+            height: 300px;
+            width: 500px;
+            background-color: antiquewhite;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid brown;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+    <input type="no" id="no2" placeholder="enter first no">
+     <input type="no" id="no1" placeholder="enter second no">
+     <h2>which operatons you want to perform?</h2>
+     <button id="add">ADD THE NUMBERS</button><br><br>
+     <button id="sub">SUBTRACT THE NUMBERS</button><br><br>
+     <button id="mul">MULTIPLY THE NUMBERS</button><br><br>
+     <button id="div">DIVIDE THE NUMBERS</button>
+     <h2 id="result">RESULT</h2>
+</div>
+    <script>
+           
+           let no1=document.getElementById("no1");
+           let no2=document.getElementById("no2");
+           let add=document.getElementById("add");
+           let sub=document.getElementById("sub");
+           let mul=document.getElementById("mul");
+           let div=document.getElementById("div");
+           let result=document.getElementById("result");
+
+            
+           add.addEventListener("click",function(){
+            let total=Number(no1.value)+Number(no2.value);
+            result.innerText="RESULT IS :"+total;
+           })
+
+            
+           sub.addEventListener("click",function(){
+            let total=Number(no1.value)-Number(no2.value);
+            result.innerText="RESULT IS :"+total;
+           })
+
+
+             
+           mul.addEventListener("click",function(){
+            let total=Number(no1.value)*Number(no2.value);
+            result.innerText="RESULT IS :"+total;
+           })
+
+
+             
+           div.addEventListener("click",function(){
+            let total=Number(no1.value)%Number(no2.value);
+            result.innerText="RESULT IS :"+total;
+           })
+           let no=24;
+           if(no%2==0){
+            console.log("no is even");
+           }else{
+            console.log("no is odd");
+           }
+
+
+
+
+    </script>
+</body>
+</html>
