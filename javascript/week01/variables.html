@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #box{
+            height: 200px;
+            width: 350px;
+            background-color: blanchedalmond;
+
+        }
+        #count{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+    <h1>simple counter app</h1>
+     <h2 id="count">0</h2>
+     <button id="btn">increase the no</button>
+      <button id="btnn">decrease the no</button>
+      </div>
+
+    <script>
+    let counter=0;
+    let btn=document.getElementById("btn");
+     let btnn=document.getElementById("btnn");
+    let count=document.getElementById("count");
+    let box=document.getElementById("box");
+    btn.addEventListener("click",function(){
+        counter+=1;
+        count.innerText=counter;
+        count.style.color="green";
+        box.style.backgroundColor="pink";
+    });
+     btnn.addEventListener("click",function(){
+        counter-=1;
+        count.innerText=counter;
+        count.style.color="red";
+        box.style.backgroundColor="yellow";
+    });
+
+
+    let age=20;
+let name="vaishnavi";
+
+console.log(age);
+console.log(name);
+
+let apple=20;
+let orange=78;
+let total=apple+orange;
+console.log(total);
+
+    </script>
+</body>
+</html>
