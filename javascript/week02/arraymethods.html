@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbers=[1,2,3,4,5];
+        let doubled=numbers.map(function(num){
+            return num*3;
+        });
+        console.log(doubled);
+        console.log(numbers);
+        let even=numbers.filter(function(num){
+            return num%2===0;
+        });
+        console.log(even);
+        let sum=numbers.reduce(function(curr,acc){
+            return curr+acc;
+        },0);
+        console.log(sum);
+
+        let marks=[7,7,35,78,99,7,66,65];
+        let passingmarks=marks.filter(function(num){
+            return num>=40;
+        });
+        console.log(passingmarks);
+
+        let totalmarks=marks.reduce(function(curr,next){
+            return curr+next;
+        },0);
+        console.log(totalmarks);
+        let average=totalmarks/marks.length;
+        console.log(average);
+    </script>
+</body>
+</html>
