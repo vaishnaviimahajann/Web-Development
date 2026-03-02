@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>STUDENT DASHBOARD</title>
     <style>
        
         body{
@@ -54,11 +54,55 @@
         <input type="text" id="name" placeholder="enter your name">
 
         <label for="marks">Marks:</label>
-        <input type="number" id="age" placeholder="enter your age">
+        <input type="number" id="marks" placeholder="enter your marks">
         <label for="age">Age:</label>
-        <input type="number" id="grade" placeholder="enter your grade">
+        <input type="number" id="age" placeholder="enter your age">
+        <label for="grade">Grade:</label>
+        <input type="text" id="grade" placeholder="enter your grade">
 
         <button id="btn" type="submit">submit</button>
     </form>
+    <h2>Student list</h2>
+        <ul id="list"></ul>
+        <h3>Total marks: <span id="totalmarks">0</span></h3>
+        <h3>Average marks: <span id="averagemarks">0</span></h3>
+        <h3>Passing students: <span id="passingstudents">0</span></h3>
+
+
+
+
+        <script>
+            let name=document.getElementById("name");
+            let marks=document.getElementById("marks");
+            let age=document.getElementById("age");
+            let grade=document.getElementById("grade");
+            let btn=document.getElementById("btn");
+            let list=document.getElementById("list");
+            let totalmarks=document.getElementById("totalmarks");
+            let averagemarks=document.getElementById("averagemarks");
+            let passingstudents=document.getElementById("passingstudents");
+            let students=[];
+            btn.addEventListener("click",function(e){
+                         e.preventDefault();
+                         let student={
+                            name:name.value,
+                            marks:parseInt(marks.value),
+                            age:parseInt(age.value),
+                            grade:grade.value
+                         }
+                         students.push(student);
+                         let li=document.createElement("li");
+                          li.innerText = `${student.name} - ${student.marks} marks - Age: ${student.age} - Grade: ${student.grade}`;
+                          list.appendChild(li);
+
+                          let total=students.reduce(function(sum,s){
+                            return sum+s.marks;
+                          },0);
+                          totalmarks.innerText=total;
+                          averagemarks.innerText=(total/students.length).toFixed(2);
+                          passingstudents.innerText=students.filter(s=>s.marks>=40).length;
+                          });
+    
+        </script>
 </body>
 </html>
