@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Generate a random message for our WEB-Page</h1>
+    <button id="btn">Generate a message</button>
+    <p id="msg"></p>
+
+<script>
+    let btn=document.getElementById("btn");
+    btn.addEventListener("click",function(){
+        generateMessage(displayMessage);
+    });
+    function generateMessage(callback){
+        let message=[
+            "Hello, World!",
+            "Welcome to our website!",
+            "Have a great day!",
+            "Enjoy your stay!",
+            "Thank you for visiting!",
+            "You are awesome!",
+            "Keep smiling!"
+        ];
+        let randomindex=Math.floor(Math.random()*message.length);
+        callback(message[randomindex]);
+    }
+        function displayMessage(msg){
+            document.getElementById("msg").textContent=msg;
+        }
+    
+</script>
+</body>
+</html>
