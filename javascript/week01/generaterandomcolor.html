@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Generate a random color for our WEB-Page</h1>
+    <button id="btn">Generate a color</button>
+
+    <script>
+        let btn=document.getElementById("btn");
+        btn.addEventListener("click",function(){
+            generatecolor(changebackground);
+        });
+
+        function generatecolor(callback){
+            let color="#" + Math.floor(Math.random()*16777215).toString(16);
+            callback(color);
+        }
+        function changebackground(color){
+            document.body.style.backgroundColor=color;
+        }
+    </script>
+</body>
+</html>
