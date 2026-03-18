@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    async function test3() {
+    let res = fetch("https://jsonplaceholder.typicode.com/posts");
+    console.log("Step 1:", res); // Promise
+
+    let res2 = await fetch("https://jsonplaceholder.typicode.com/posts");
+    console.log("Step 2:", res2); // actual response
+}
+
+test3();
+
+    </script>
+</body>
+</html>
