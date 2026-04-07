@@ -10,15 +10,15 @@
     <div class="todo">
     <h1>Enter Your TODO list</h1>
 
-<input type="text" id="work" placeholder="enter">
-<button id="btn">ADD</button>
-<ul id="list"></ul>
-</div>
+    <input type="text" id="work" placeholder="enter">
+    <button id="btn">ADD</button>
+    <ul id="list"></ul>
+    </div>
 
 
 
         <script>
-    let btn = document.getElementById("btn");
+   /* let btn = document.getElementById("btn");
     let work = document.getElementById("work");
     let list = document.getElementById("list");
 
@@ -39,6 +39,16 @@
     list.appendChild(li);        // phir list me add
 
     work.value = "";
+});*/
+
+let btn=document.getElementById("btn");
+let work=document.getElementById("work");
+let list=document.getElementById("list");
+btn.addEventListener("click",function(){
+    let value=work.value;
+    let li=document.createElement("li");
+    li.innerText=value;
+    list.appendChild(li);
 });
 </script>
         
