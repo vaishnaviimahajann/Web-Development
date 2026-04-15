@@ -38,73 +38,49 @@ app.post("/users",(req,res)=>{
   });
 })
 
+app.put("/users/:id",(req,res)=>{
+    const id = parseInt(req.params.id);
+  
+    const user = users.find(u => u.id === id);
 
-app.listen(5000, () => {
-  console.log("Server running on port 5000");
-});
-/*const express = require("express");
-const app = express();
+    if(!user){
+        return res.send("user not found");
+    }
 
-app.use(express.json());
+    user.name=req.body.name || user.name;
+    user.age=req.body.age || user.age;
 
-// 👇 temporary database
-let users = [
-  { id: 1, name: "vaishnavi", age: 22 },
-  { id: 2, name: "rahul", age: 25 }
-];
-
-// GET all users
-app.get("/users", (req, res) => {
-  res.json(users);
-});
-
-// POST (add user)
-app.post("/users", (req, res) => {
-  const newUser = {
-    id: users.length + 1,
-    name: req.body.name,
-    age: req.body.age
-  };
-
-  users.push(newUser);
-
-  res.json({
-    message: "user added",
+    console.log("UPDATED USER:", user);
+   console.log(users);
+    res.json({
+    message: "user updated",
     data: users
   });
-});
 
-// PUT (update user by id)
-app.put("/users/:id", (req, res) => {
+  
+
+});
+app.delete("/users/:id", (req, res) => {
   const id = parseInt(req.params.id);
 
+  // user exist check
   const user = users.find(u => u.id === id);
 
   if (!user) {
     return res.send("user not found");
   }
 
-  user.name = req.body.name || user.name;
-  user.age = req.body.age || user.age;
-
-  res.json({
-    message: "user updated",
-    data: users
-  });
-});
-
-// DELETE (delete user by id)
-app.delete("/users/:id", (req, res) => {
-  const id = parseInt(req.params.id);
-
+  // delete
   users = users.filter(u => u.id !== id);
+
+  // 👇 updated array terminal me print
+  console.log(users);
 
   res.json({
     message: "user deleted",
     data: users
   });
 });
-
 app.listen(5000, () => {
   console.log("Server running on port 5000");
-});*/
+});
