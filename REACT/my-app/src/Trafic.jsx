@@ -18,4 +18,3 @@ function Trafic(){
 }
 export default Trafic;
 
-//git commit -m "learn about useState hook where "The useState hook is a special function in React that allows you to add state to your functional components. State is like a way to store and manage data that can change over time. When you use the useState hook, you can create a piece of state and a function to update that state. This makes it easy to create interactive components that can respond to user actions or other events. For example, in the Trafic component, we use useState to keep track of the current color of the traffic light and update it when the buttons are clicked!"
