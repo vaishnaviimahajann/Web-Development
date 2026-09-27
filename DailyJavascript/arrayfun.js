@@ -28,3 +28,17 @@ let result4 = arr.find(function(num){
     return num > 3;
 });
 console.log(result4);  //find() is an array method that returns the value of the first element in the array that satisfies the provided testing function. If no values satisfy the testing function, undefined is returned.
+
+let numberss = [1, 3, 5, 8];
+
+let result5 = numberss.some(function(num) {
+    return num % 2 === 0;
+});
+console.log(result5);
+
+
+//some and every function are both gives bolean result
+
+let flowers = ["lily" , "jasmine" , "rose" , "mogra"];
+flowers.sort();
+console.log(flowers);
