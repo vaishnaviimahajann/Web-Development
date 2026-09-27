@@ -42,3 +42,10 @@ console.log(result5);
 let flowers = ["lily" , "jasmine" , "rose" , "mogra"];
 flowers.sort();
 console.log(flowers);
+
+let fruitsss = ["apple", "banana", "mango", "orange"];
+
+let result7 = fruitsss.slice(1, 3);
+
+console.log(result7);
+// ["banana", "mango"]
