@@ -16,3 +16,15 @@ let result3 = numbers.reduce(function(accumulator, currentValue){
     return accumulator + currentValue;
 }, 0);
 console.log(result3);
+
+let color = ['red', 'green', 'blue', 'yellow'];
+color.forEach(function(col){
+    console.log(col);
+});  //forEach() is an array method that executes a provided function once for each element of an array.
+
+
+let arr = [1, 2, 3, 4, 5];
+let result4 = arr.find(function(num){
+    return num > 3;
+});
+console.log(result4);  //find() is an array method that returns the value of the first element in the array that satisfies the provided testing function. If no values satisfy the testing function, undefined is returned.
