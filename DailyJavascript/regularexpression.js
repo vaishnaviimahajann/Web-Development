@@ -17,4 +17,4 @@ let pattern = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])/;
 
 console.log(pattern.test(passwordd)); // true
 
-//A Regular Expression (Regex) is a pattern used to search, match, and validate text.
+//
